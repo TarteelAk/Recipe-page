@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Heading: 'Young Serif', serif;
+    --Heading-Weight: 400;
+    --Content: 'Outfit', sans-serif;
+    --Content-font-size: 16px;
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+
+}
+
+.card {
+    max-width: 550px;
+    max-height: 1440px;
+    margin: 20px auto;
+    background-color: hsl(0, 0%, 100%);
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+#main-heading {
+    font-weight: 400;
+    margin-top: 2.5rem;
+    font-size: 32px;
+}
+
+#content {
+    margin: 1.8rem 0 1.5rem 0;
+    font-family: var(--Content);
+    font-size: calc(var(--Content-font-size)/1.35);
+    color: hsl(30, 10%, 34%);
+
+}
+
+ul,
+ol {
+    padding: 10px 20px;
+}
+
+.list1 {
+    padding: 20px 20px;
+    background: hsl(330, 100%, 98%);
+    border-radius: 10px;
+}
+
+#preparation {
+    color: hsl(332, 51%, 32%);
+    font-family: var(--Content);
+    font-weight: bold;
+}
+
+.list1 li::marker {
+    list-style-type: circle;
+    color: hsl(332, 51%, 32%);
+}
+
+.list1 li {
+    padding: 5px;
+    font-size: calc(var(--Content-font-size)/1.35);
+    font-family: var(--Content);
+    color: hsl(30, 10%, 34%);
+}
+
+#bold-content {
+    font-weight: 700;
+}
+
+#sub-heading {
+    font-family: var(--Heading);
+    color: hsl(14, 45%, 36%);
+    margin: 1.5rem 0 1rem 0;
+    font-size: 20px;
+}
+
+.list2 li::marker {
+    list-style-type: circle;
+    color: hsl(332, 51%, 32%);
+}
+
+.list2 li {
+    padding: 5px;
+    font-size: calc(var(--Content-font-size)/1.35);
+    font-family: var(--Content);
+    color: hsl(30, 10%, 34%);
+}
+
+.nutrition p {
+    margin: 1.3rem 0 0.9rem 0;
+    font-family: var(--Content);
+    font-size: calc(var(--Content-font-size)/1.35);
+    color: hsl(30, 10%, 34%);
+}
+
+table {
+    width: 375px;
+    border-collapse: collapse;
+
+
+}
+
+tr {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    border-width: 75%;
+
+}
+
+td {
+
+    padding: 10px 30px;
+
+    font-family: var(--Content);
+}
+
+#data {
+    font-size: calc(var(--Content-font-size)/1.35);
+    color: hsl(30, 10%, 34%);
+    ;
+}
+
+#bold-data {
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+@media screen and (max-width: 375px) {
+    .card {
+        max-width:375px;
+        height:fit-content;
+        padding: unset;
+        margin: unset;
+        box-sizing: content-box;
+    }
+
+    body{
+        padding:0;
+        margin:0;
+    }
+}
